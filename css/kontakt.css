@@ -1,0 +1,139 @@
+.kontakt {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 7rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.kontakt-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 700px;
+  border-radius: 5px;
+}
+
+.kontakt-content .naslov {
+  width: auto;
+  margin: 1rem;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.kontakt-content .naslov h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  width: max-content;
+}
+
+.kontakt-content .naslov h1 i {
+  font-size: 3rem;
+  color: rgb(23, 203, 235);
+}
+
+.podaci {
+  margin: 1rem;
+}
+
+.txtLabel {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.txtIn {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+option {
+  font-size: 1.5rem;
+}
+
+#txtPoruka {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#newsletter {
+  display: initial;
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: 650;
+  margin: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#btnPosalji {
+  background-color: rgb(23, 115, 235);
+}
+
+#btnPosalji:hover {
+  background-color: rgb(16, 75, 151);
+}
+
+#btnOdustani {
+  background-color: rgb(235, 44, 44);
+}
+
+#btnOdustani:hover {
+  background-color: rgb(168, 33, 33);
+}
+
+@media screen and (max-width: 768px) {
+  .kontakt {
+    top: 0;
+  }
+  .kontakt-content {
+    width: 90vw;
+  }
+  .kontakt-content .naslov {
+    margin: 0.5rem;
+  }
+  .kontakt-content .naslov h1 {
+    font-size: 2rem;
+  }
+  .kontakt-content .naslov h1 i {
+    font-size: 2rem;
+  }
+  .podaci {
+    margin: 0.5rem;
+  }
+  .txtLabel {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0.25rem 0;
+  }
+  .txtIn {
+    height: 2rem;
+    font-size: 1.25rem;
+    border-radius: 3px;
+  }
+  option {
+    font-size: 1.25rem;
+  }
+  #txtPoruka {
+    height: 6rem;
+  }
+  button {
+    font-size: 1.25rem;
+  }
+}

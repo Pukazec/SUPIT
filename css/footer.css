@@ -1,0 +1,47 @@
+footer {
+  background-image: url("/img/zaiskri-bg.jpg");
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 4rem;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+#fot1 {
+  font-weight: 600;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#fot2 {
+  font-weight: 600;
+  color: red;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  span {
+    font-size: 3rem;
+  }
+  footer {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 120px;
+    font-size: 2rem;
+  }
+  span {
+    font-size: 2rem;
+  }
+  #fot1 {
+    margin-top: 30px;
+  }
+}

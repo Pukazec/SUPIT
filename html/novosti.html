@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+    rel="shortcut icon"
+    href="https://www.algebra.hr/wp-content/themes/algebra/favicon.ico"
+  />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supit-projektni zadatak</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/novosti.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/kontakt.css" />
+    <link
+      rel="stylesheet"
+      href="/library/css/all.min.css"
+    />
+    <script defer src="/javascript/navbar.js"></script>
+    <script defer src="/javascript/kontakt.js"></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logos">
+          <img src="/img/Algebra-logo.png" id="logo" />
+          <button id="toggle"><i class="fas fa-bars fa-2x"></i></button>
+        </div>
+        <div class="izbornik">
+          <ul class="navbar-header" id="navigation">
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i> Početna</a>
+            </li>
+            <li>
+              <a href="oNama.html"><i class="fas fa-comments"></i> O nama</a>
+            </li>
+            <li>
+              <a href="novosti.html"><i class="fas fa-info-circle"></i> Novosti</a>
+            </li>
+            <li>
+              <a href="nastavniPlan.html"
+                ><i class="fas fa-info-circle"></i> Nastavni plan</a
+              >
+            </li>
+            <li>
+              <button id="btnkontakt"><i class="fas fa-envelope"></i> Kontakt</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="naslov">
+          <h1 id="naslov">Novosti</h1>
+        </div>
+        <div class="novost">
+          <div class="novosti">
+            <a href="/html/novost1.html" id="novost1">
+              <div class="news">
+                <img src="/img/novost1.jpg" alt="" />
+                <div class="tekst">
+                  <p class="text">
+                    <span class="date"> 28.08.2019.</span>
+                    <br />
+                    Student Josip Stanešić 12. je sistemaš svijeta i dobitnik
+                    medalje iyvrsnosti na natjecanju WorldSkills Kayan 2019.
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="novosti">
+            <a href="/html/novost2.html" id="novost2">
+              <div class="news">
+                <img src="/img/novost2.jpg" alt="" />
+                <div class="tekst">
+                  <p class="text">
+                    <span class="date"> 22.07.2019.</span>
+                    <br />
+                    Nagrađujemo iyvrsnostČ Objavljujemo dobitnike stipendijskog
+                    natječaja 2018./2019.
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="novosti">
+            <a href="/html/novost3.html" id="novost3">
+              <div class="news">
+                <img src="/img/novost3.jpg" alt="" />
+                <div class="tekst">
+                  <p class="text">
+                    <span class="date"> 18.04.2019.</span>
+                    <br />Digitalno Junior ljeto
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <footer>
+        <span id="fot1"> BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</span><br /><span
+          id="fot2"
+          >ZAISKRI</span
+        >
+      </footer>
+      <div class="kontakt" id="kontakt">
+        <div class="kontakt-content">
+          <div class="naslov">
+            <h1><i class="fas fa-envelope"></i></i> Kontaktirajte nas</h1>
+          </div>
+          <div class="podaci">
+            <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" id="forma">
+              <label for="ime" class="txtLabel">Puno ime:</label>
+              <input class="txtIn" type="text" name="name" id="txtIme" />
+              <label for="email" class="txtLabel">E-mail:</label>
+              <input type="email" class="txtIn" name="email" id="txtEmail" />
+              <label for="vaznost"  class="txtLabel"
+                >Važnost poruke:</label
+              >
+              <select class="txtIn" name="importance" id="txtvaznost">
+                <option value="0" selected>Visoka</option>
+                <option value="1">Niska</option>
+              </select>
+              <label for="poruka" class="txtLabel">Vaša poruka:</label>
+              <textarea
+                name="message"
+                id="txtPoruka"
+                class="txtLabel"
+                cols="30"
+                rows="5" required
+              ></textarea>
+              <label for="newsletter" id="newsletter" class="txtLabel"
+                >Primaj newsletter:
+              </label>
+              <input type="checkbox" name="newsletter" id="checkNewsletter" />
+              <div class="buttons">
+                <button id="btnPosalji" type="submit">Pošalji</button>
+                <button type="button" id="btnOdustani">Odustani</button>
+              </div>
+            </form>
+        </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

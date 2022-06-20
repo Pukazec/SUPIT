@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+    rel="shortcut icon"
+    href="https://www.algebra.hr/wp-content/themes/algebra/favicon.ico"
+  />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supit-projektni zadatak</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/novost.css" />
+    <link rel="stylesheet" href="/css/novost2.css">
+    <link rel="stylesheet" href="/css/kontakt.css" />
+    <link
+      rel="stylesheet"
+      href="/library/css/all.min.css"
+    />
+    <script defer src="/javascript/navbar.js"></script>
+    <script defer src="/javascript/kontakt.js"></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logos">
+          <img src="/img/Algebra-logo.png" id="logo" />
+          <button id="toggle"><i class="fas fa-bars fa-2x"></i></button>
+        </div>
+        <div class="izbornik">
+          <ul class="navbar-header" id="navigation">
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i> Početna</a>
+            </li>
+            <li>
+              <a href="oNama.html"><i class="fas fa-comments"></i> O nama</a>
+            </li>
+            <li>
+              <a href="novosti.html"><i class="fas fa-info-circle"></i> Novosti</a>
+            </li>
+            <li>
+              <a href="nastavniPlan.html"
+                ><i class="fas fa-info-circle"></i> Nastavni plan</a
+              >
+            </li>
+            <li>
+              <button id="btnkontakt"><i class="fas fa-envelope"></i> Kontakt</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="content">
+        <div class="vrh" id="stipendija">
+          <div class="text">
+            Nagrađujemo izvrsnost: Objavljujemo dobitnike stipendijskog
+            natječaja šk.god. 2018./2019.!
+          </div>
+        </div>
+        <div class="naslov">
+          <h2>Stipendijski natječaj šk.god. 2018./2019.</h2>
+          <p>
+            Nakon velikog broja prijava koje smo primili, detaljnom analizom i
+            provjerom utvrdili smo dobitnike ovogodišnjeg stipendijskog
+            natječaja za maturante! Stipendiju u vrijednosti od 10.000,00 kuna
+            na potrošačkoj kartici dobivaju: Heidi Sokolovski iz Zagreba - za
+            najbolji rezultat iz Matematike na A razini osvojila je stipendiju u
+            iznosu od 10.000,00 kn. Tereza Žugaj iz Zagreba - za najbolji
+            rezultat iz Matematike na B razini osvojila je stipendiju u iznosu
+            od 10.000,00 kn. Dalija Romac iz Sinja - za najbolji rezultat iz
+            Hrvatskog jezika na A razini te dodatna 204 boda za rezultat iz
+            Matematike A i Engleskog jezika A osvojila je stipendiju u iznosu od
+            10.000,00 kn. Ella Milinović iz Zagreba - za najbolji rezultat iz
+            Hrvatskog jezika na B razini osvojila je stipendiju u iznosu od
+            10.000,00 kn. Borna Skračić iz Zadra - za najbolji rezultat iz
+            Engleskog jezika na A razini osvojio je stipendiju u iznosu od
+            10.000,00 kn. Lukas Božić iz Umaga - za najbolji rezultat iz
+            Engleskog jezika na B razini osvojio je stipendiju u iznosu od
+            10.000,00 kn.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <span id="fot1"> BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</span><br /><span
+          id="fot2"
+          >ZAISKRI</span
+        >
+      </footer>
+      <div class="kontakt" id="kontakt">
+        <div class="kontakt-content">
+          <div class="naslov">
+            <h1><i class="fas fa-envelope"></i></i> Kontaktirajte nas</h1>
+          </div>
+          <div class="podaci">
+            <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" id="forma">
+              <label for="ime" class="txtLabel">Puno ime:</label>
+              <input class="txtIn" type="text" name="name" id="txtIme" />
+              <label for="email" class="txtLabel">E-mail:</label>
+              <input type="email" class="txtIn" name="email" id="txtEmail" />
+              <label for="vaznost"  class="txtLabel"
+                >Važnost poruke:</label
+              >
+              <select class="txtIn" name="importance" id="txtvaznost">
+                <option value="0" selected>Visoka</option>
+                <option value="1">Niska</option>
+              </select>
+              <label for="poruka" class="txtLabel">Vaša poruka:</label>
+              <textarea
+                name="message"
+                id="txtPoruka"
+                class="txtLabel"
+                cols="30"
+                rows="5" required
+              ></textarea>
+              <label for="newsletter" id="newsletter" class="txtLabel"
+                >Primaj newsletter:
+              </label>
+              <input type="checkbox" name="newsletter" id="checkNewsletter" />
+              <div class="buttons">
+                <button id="btnPosalji" type="submit">Pošalji</button>
+                <button type="button" id="btnOdustani">Odustani</button>
+              </div>
+            </form>
+        </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

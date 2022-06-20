@@ -1,0 +1,219 @@
+.content {
+  margin-top: 8rem;
+  min-height: calc(100vh - 200px - 8rem);
+}
+
+#naslov {
+  width: 55vw;
+  margin: auto;
+  padding: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  border-bottom: 3px solid rgb(255, 227, 0);
+  text-align: center;
+}
+
+.zbivanja {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 8rem - 3px);
+  min-height: fit-content;
+}
+
+.pretraga {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.pretraga label {
+  font-size: 1.75rem;
+}
+
+.pretraga input {
+  height: 3rem;
+  font-size: 1.75rem;
+  width: 95%;
+  margin: 0.5rem 0;
+}
+
+.ui-autocomplete {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ui-menu-item-wrapper {
+  font-size: 1.75rem;
+  color: #ccc;
+}
+.rezultati {
+  width: 50%;
+  margin-top: 5rem;
+}
+table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+thead tr {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+thead tr td {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+tbody tr {
+  border-top: 1px solid #ccc;
+}
+.kolegij:nth-child(odd) {
+  background-color: rgb(169, 169, 169);
+}
+
+tbody tr td {
+  font-size: 1.75rem;
+  padding: 0.5rem;
+}
+
+.skraceni-naziv {
+  display: none;
+}
+
+.obrisi {
+  background-color: rgb(222, 0, 0);
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.obrisi:hover {
+  background-color: rgb(169, 0, 0);
+}
+
+#tfoot tr {
+  border-top: 2px solid black;
+}
+
+tfoot tr td {
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding: 0.5rem;
+}
+
+.ukupno {
+  color: rgb(222, 0, 0);
+}
+
+.ui-dialog-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#ponovno-upisano {
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 1340px) and (max-width: 1660px) {
+  .zbivanja {
+    width: 95vw;
+  }
+  .rezultati {
+    width: 50%;
+  }
+  .skraceni-naziv {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1340) {
+  .zbivanja {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .pretraga {
+    width: 100%;
+  }
+  .pretraga input {
+    width: 98%;
+  }
+  .rezultati {
+    width: 100%;
+    margin-left: 0;
+  }
+  .rezultati table {
+    width: 100%;
+  }
+  .skraceni-naziv {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .content {
+    height: calc(100vh - 150px - 8rem);
+    min-height: auto;
+  }
+  .zbivanja {
+    width: 90vw;
+    flex-direction: column;
+    height: calc(100% - 96px);
+  }
+  .pretraga {
+    width: 100%;
+  }
+  .pretraga input {
+    width: 98%;
+  }
+  .rezultati {
+    width: 100%;
+    margin-left: 0;
+    overflow-y: scroll;
+  }
+  .rezultati table {
+    width: 100%;
+  }
+  .skraceni-naziv {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    margin-top: 8rem;
+    height: calc(100vh - 120px - 8rem);
+  }
+  #naslov {
+    padding: 1rem;
+  }
+  .zbivanja {
+    width: 90vw;
+    flex-direction: column;
+    height: calc(100% - 76px);
+  }
+  .pretraga {
+    width: 98%;
+    margin: 2rem 0;
+  }
+  .pretraga input {
+    width: 100%;
+  }
+  .rezultati {
+    margin: 0;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .naziv {
+    display: none;
+  }
+  .skraceni-naziv {
+    display: table-cell;
+  }
+}

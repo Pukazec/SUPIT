@@ -1,0 +1,501 @@
+.content {
+  background-color: white;
+  margin-top: 70px;
+}
+
+.kampus {
+  height: 38vh;
+  width: 100%;
+  background-image: url(/img/kampus-iz-zraka-min-1.jpg);
+  background-position: center;
+  overflow: hidden;
+  animation: slideInDown 2s;
+}
+.naslov {
+  width: 60vw;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 4rem;
+  animation: slideInUp 2s;
+}
+#naslov {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 4px solid rgb(255, 227, 0);
+  padding: 1.5rem 0;
+}
+
+h2 {
+  color: rgb(169, 0, 0);
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+h2 i {
+  font-size: 3rem;
+}
+
+.lijepiTekst {
+  background-color: rgb(243, 243, 243);
+  padding: 2rem;
+  margin: 4rem 0;
+  animation: fadeIn 2s;
+}
+
+.lijepiTekst p {
+  font-family: "Supermercado One", cursive;
+  text-align: justify;
+  width: 60vw;
+  font-size: 2rem;
+  margin: auto;
+  padding: 4rem;
+}
+
+.cards {
+  margin: auto;
+  width: 70vw;
+  display: grid;
+}
+#cards1 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+#cards2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#certifikati {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#card1 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+#certifikati #card1 {
+  border: none;
+}
+
+#card2 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+#certifikati #card2 {
+  border: none;
+}
+
+#card3 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 1/2;
+  grid-column: 3/-1;
+}
+
+#certifikati #card3 {
+  border: none;
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+#card4 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+#certifikati #card4 {
+  border: none;
+  grid-row: 1/2;
+  grid-column: 4/-1;
+}
+#card5 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#certifikati #card5 {
+  border: none;
+  grid-row: 2/-1;
+  grid-column: 1/2;
+}
+#card6 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 2/3;
+  grid-column: 3/-1;
+}
+#certifikati #card6 {
+  border: none;
+  grid-row: 2/-1;
+  grid-column: 2/3;
+}
+#card7 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 3/-1;
+  grid-column: 1/2;
+}
+#certifikati #card7 {
+  border: none;
+  grid-row: 2/-1;
+  grid-column: 3/4;
+}
+#card8 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 3/-1;
+  grid-column: 2/3;
+}
+#certifikati #card8 {
+  border: none;
+  grid-row: 2/-1;
+  grid-column: 4/-1;
+}
+#card9 {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  grid-row: 3/-1;
+  grid-column: 3/-1;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem 0;
+  margin: 0 2rem;
+  border-bottom: 1px solid gray;
+}
+
+h3 span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(0, 0, 192);
+  text-shadow: none;
+}
+
+.tekstKutija {
+  width: auto;
+  padding: 0;
+  font-size: 1.38rem;
+  margin: 2rem;
+}
+
+#certifikati div {
+  border: none;
+}
+
+#certifikati div p {
+  width: auto;
+  font-variant-caps: all-small-caps;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-bottom: 1px solid lightgray;
+}
+
+#certifikati div img {
+  display: block;
+  margin: 2rem auto;
+  height: 7rem;
+}
+
+.lokacija {
+  background-image: url(/img/kakoDoNas.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.upute {
+  width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.upute div {
+  margin-top: 5rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+h4 i {
+  font-size: 2rem;
+  color: rgb(23, 115, 235);
+}
+
+.upute div p {
+  text-align: left;
+  width: auto;
+  font-size: 1.38rem;
+  padding: 1rem 0 3rem 0;
+  margin: 0 10rem 0 7rem;
+}
+
+p a {
+  font-size: 1.38rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.map {
+  width: 55vw;
+  height: 50vh;
+  margin: 3rem auto 0 auto;
+  padding-bottom: 3rem;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .content {
+    margin-top: 10rem;
+  }
+  .cards {
+    width: 90vw;
+  }
+  #certifikati {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #certifikati #card1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #certifikati #card2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #certifikati #card3 {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+  }
+  #certifikati #card4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #certifikati #card5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #certifikati #card6 {
+    grid-column: 3/-1;
+    grid-row: 2/3;
+  }
+  #certifikati #card7 {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+  }
+  #certifikati #card8 {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+  }
+  #certifikati div img {
+    max-width: 26rem;
+  }
+  .upute {
+    width: 90vw;
+  }
+  .upute div p {
+    margin: 0 1.5rem 0 1rem;
+    padding: 0.5rem 0 1rem 0;
+  }
+  .map {
+    width: 90vw;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px 0;
+  }
+  #logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .izbornik {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .page-bar {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-top: 0;
+  }
+  .kampus {
+    height: 25vh;
+    background-size: 100%;
+  }
+  #naslov {
+    font-size: 3rem;
+    padding: 0.5rem 0;
+  }
+  h2 {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+  .lijepiTekst {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  .lijepiTekst p {
+    width: 70vw;
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .cards {
+    width: 80vw;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
+  }
+  h3 span {
+    font-size: 1.5rem;
+  }
+  .tekstKutija {
+    font-size: 1.2rem;
+  }
+  #certifikati {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #certifikati div {
+    width: 40vw;
+  }
+  #certifikati #card1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #certifikati #card2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #certifikati #card3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #certifikati #card4 {
+    grid-column: 1/2;
+    grid-row: 4/-1;
+  }
+  #certifikati #card5 {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+  #certifikati #card6 {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+  }
+  #certifikati #card7 {
+    grid-column: 2/-1;
+    grid-row: 3/4;
+  }
+  #certifikati #card8 {
+    grid-column: 2/-1;
+    grid-row: 4/-1;
+  }
+  #certifikati div p {
+    font-size: 1.5rem;
+  }
+  #certifikati div img {
+    max-width: 38vw;
+    height: 5rem;
+    margin: 1rem auto;
+  }
+  .lokacija {
+    margin-top: 2rem;
+  }
+  .upute {
+    width: 95vw;
+    gap: 0.2rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+    padding: 0.5rem;
+  }
+  .upute div p {
+    padding: 1rem 0 1.5rem 0;
+    margin: 0 3rem 0 2rem;
+    font-size: 1.1rem;
+  }
+  p a {
+    font-size: 1.1rem;
+  }
+  .map {
+    width: 98vw;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

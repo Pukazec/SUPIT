@@ -1,0 +1,149 @@
+.content {
+  margin-top: 7rem;
+}
+
+.naslov {
+  width: 60vw;
+  overflow: hidden;
+  margin: auto;
+  animation: slideInUp 1.5s;
+}
+
+#naslov {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 4px solid rgb(255, 227, 0);
+  padding: 1.5rem 0;
+}
+
+.novost {
+  display: flex;
+  margin: 0 auto;
+  gap: 15rem;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 5rem 0;
+  background-color: rgb(243, 243, 243);
+}
+
+.novosti {
+  height: 250px;
+  width: 250px;
+  border: solid 2rem rgb(230, 230, 230);
+  border-radius: 50%;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0);
+  animation: zoomIn 1.5s;
+}
+a {
+  text-decoration: none;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.news img {
+  display: flex;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 0;
+}
+
+.tekst {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date {
+  color: yellow;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.text {
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .novost {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .novosti {
+    width: fit-content;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    margin-top: 8rem;
+  }
+  .naslov {
+    animation: slideInUpMobile 2s;
+  }
+  #naslov {
+    font-size: 3rem;
+    padding: 0.5rem 0;
+  }
+  .novost {
+    margin-top: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  .novosti {
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUpMobile {
+  from {
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

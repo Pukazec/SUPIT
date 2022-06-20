@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  z-index: 10;
+  font-weight: 800;
+  font-size: 2rem;
+  padding: 20px 0;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+}
+
+.logos {
+  display: flex;
+}
+
+#logo {
+  height: 40px;
+  margin-left: 20px;
+}
+
+#toggle {
+  display: none;
+}
+
+.izbornik {
+  width: 100%;
+}
+
+.izbornik li,
+.page-bar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.izbornik li a,
+.page-bar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.55rem;
+}
+
+.izbornik li button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.izbornik li a:hover {
+  color: yellow;
+}
+
+.izbornik li button:hover {
+  color: yellow;
+}
+
+.izbornik li a i {
+  font-size: 1.55rem;
+  color: rgb(255, 192, 75);
+}
+
+.izbornik li button i {
+  font-size: 1.55rem;
+  color: rgb(255, 192, 75);
+}
+
+.page-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  animation: bounceInRight 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.navbar-page li a {
+  color: rgb(255, 192, 75);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  #logo {
+    display: inline;
+    margin-left: 20px;
+  }
+  #toggle {
+    height: 40px;
+    width: 40px;
+    margin: 0 0 0 20px;
+    display: inline;
+    background-color: rgb(69, 69, 69);
+  }
+  #toggle:hover {
+    background-color: rgb(169, 169, 169);
+  }
+  .izbornik {
+    width: 100%;
+  }
+  .navbar-header {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-header li {
+    margin: 5px 0;
+  }
+  .page-bar {
+    display: none;
+  }
+}
+
+@keyframes bounceInRight {
+  from {
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

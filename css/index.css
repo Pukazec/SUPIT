@@ -1,0 +1,90 @@
+body {
+  font-weight: 700;
+  background-color: black;
+}
+
+.content {
+  margin-top: 7rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  overflow: hidden;
+}
+#video video {
+  z-index: -1;
+  width: 100%;
+}
+#sredina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: calc(100vh - 7rem);
+}
+
+#tekst {
+  height: 100vh;
+  display: flex;
+}
+#tipkanje {
+  white-space: pre;
+}
+span {
+  font-size: 5rem;
+  align-self: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.crveno {
+  font-size: 5rem;
+  color: red;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.typed-cursor {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .content {
+    margin: 0;
+  }
+  span {
+    font-size: 3rem;
+  }
+  .crveno {
+    font-size: 3rem;
+  }
+  #video video {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 0;
+  }
+  span {
+    font-size: 2rem;
+  }
+  .crveno {
+    font-size: 2rem;
+  }
+  #video {
+    height: calc(100vh - 112px);
+  }
+  #video video {
+    height: 100%;
+  }
+  #sredina {
+    height: calc(100vh - 112px);
+  }
+}
